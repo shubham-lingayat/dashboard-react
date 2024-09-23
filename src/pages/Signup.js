@@ -1,6 +1,18 @@
 import React from "react";
-function Signup() {
-  return <div>Signup</div>;
+import SignupImg from "../assets/signup.png";
+import Template from "../componenets/Template";
+
+function Signup({ setIsLoggedIn }) {
+  return (
+    <Template
+      title="Join the millions learning to code with StudyNotion for free"
+      desc1="Build skills for today, tomorrow, and beyond."
+      desc2="Education to future-proof your career."
+      image={SignupImg}
+      formtype="signup"
+      setIsLoggedIn={setIsLoggedIn}
+    />
+  );
 }
 
 export default Signup;
